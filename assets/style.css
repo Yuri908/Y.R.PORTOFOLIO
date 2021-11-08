@@ -1,0 +1,94 @@
+  
+  body {
+    background-color: rgb(156, 155, 155);
+    background-image: url("../images/DSC06635.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed, scroll;
+    color: white;
+    line-height: 1.7;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align:center;
+    padding-bottom: 250px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    margin-right: 15px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none
+  }
+
+  h1 {
+  text-align: center;
+  font-weight: lighter;
+  }
+
+  .line {
+    font-size: 25px;
+  }
+
+  h2 {
+    color: black;
+    margin-right: 35px;
+  }
+
+  .ABOUT {
+    width: 100%;
+    padding: 200px 0 30px 20px;
+    margin: 20px;
+    display: flex;
+  }
+
+  .ABOUT img {
+    width: 10%;
+    border: 10px solid white;
+  }
+
+  .WORK {
+    width: 100%;
+    padding: 20px 0 30px 20px;
+    margin: 20px;
+    display: flex;
+  }
+
+  .WORK h3 {
+    text-align: left;
+    color: rgb(83, 80, 80);
+  }
+
+  .WORK img {
+    width: 15%;
+    float: left;
+  }
+ 
+  .WORK P {
+    vertical-align: center;
+  }
+  
+  .CONTACT {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .CONTACT img {
+    width: 15%;
+    border: 10px solid white;
+  }
