@@ -1,4 +1,4 @@
-  
+  /* Generic Styling */
   body {
     background-color: rgb(156, 155, 155);
     background-image: url("../images/DSC06635.jpg");
@@ -10,6 +10,7 @@
     line-height: 1.7;
   }
   
+  /* Navagation Bar Styling starts */
   nav {
     display: flex;
     justify-content: flex-end;
@@ -18,7 +19,8 @@
     font-weight: bold;
     font-size: 15px;
     text-align:center;
-    padding-bottom: 250px;
+    padding-bottom: 25px;
+    /* position: fixed; */
   }
 
   nav ul {
@@ -35,16 +37,20 @@
     text-decoration: none
   }
 
+
+  /* Center Piece Title */
   h1 {
   text-align: center;
   font-weight: lighter;
-  margin: 3em;
+  margin: 5em;
+  padding-bottom: 5em;
   }
 
   .line {
     font-size: 25px;
   }
 
+  /* General sections styling */
   section {
     display: flex;                                                                                
     flex-direction: row;
@@ -60,18 +66,16 @@
 
   .ABOUTme {
     flex-direction: column;
-    /* margin: 5em; */
   }
 
   #ABOUT img {
-    width: 10%;
+    width: 30%;
     border: 5px solid white;
   }
 
   .WORKproject{
     flex-direction: column;
     justify-content: center;
-    /* margin: 5em; */
   }
 
   .WORK h3 {
@@ -80,7 +84,7 @@
   }
 
   #WORK img {
-    width: 30%;
+    width: 50%;
     float: left;
   }
  
@@ -89,6 +93,9 @@
   }
   
   #CONTACT {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color:rgb(156, 155, 155);
     margin: 5em;
   }
@@ -99,7 +106,7 @@
   }
 
   #CONTACT img {
-    width: 15%;
+    width: 20%;
     border: 10px solid white;
   }
   
@@ -107,3 +114,37 @@
     font-weight: bolder;
     font-size: 20px;
   }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width:980px) {
+  nav {
+    justify-content:flex-end;
+    /* position: fixed; */
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width:786px) {
+  section {
+    padding: 0 2em 0 2em;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width:575px) {
+  h1 section {
+    width: 100%;
+  }
+
+  #ABOUT img {
+    width: 50%;
+  }
+
+  #CONTACT img {
+    width: 50%;
+  }
+
+  #WORK img {
+    width: 75%;
+  }
+}
